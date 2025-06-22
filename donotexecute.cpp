@@ -35,9 +35,9 @@ int main() {
         angle += angularSpeed;
         if (angle > 2 * PI) angle -= 2 * PI;
 
-        // 화면 크기 전체 범위에서 랜덤 움직임
-        int xOffset = (rand() % (2 * w + 1)) - w; // -w ~ +w
-        int yOffset = (rand() % (2 * h + 1)) - h; // -h ~ +h
+        
+        int xOffset = (rand() % (2 * w + 1)) - w; 
+        int yOffset = (rand() % (2 * h + 1)) - h;
 
         POINT pts[3];
         for (int i = 0; i < 3; i++) {
